@@ -5,11 +5,11 @@ export const menu = [
   },
   {
     label: "Reach Out To Us",
-    url: "/our-location",
+    url: "/contact",
   },
   {
     label: "Personal Training Program",
-    url: "/membership",
+    url: "/personal-training-program",
   },
   {
     label: "Meet Our Trainer's Squad",
@@ -37,7 +37,7 @@ export const menu = [
   },
   {
     label: "Careers",
-    url: "/careers",
+    url: "/contact",
   },
 ];
 

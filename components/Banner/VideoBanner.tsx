@@ -46,22 +46,24 @@ const VideoBanner: React.FC = async () => {
       {/* OVERLAY */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent lg:from"></div>
       {/* H1 TEXT */}
-      <div className="absolute inset-0 flex gap-2 flex-col templateContainer items-start lg:items-center  justify-end lg:justify-end pb-14">
-        <Image
-          src={"/logos/alain2.png"}
-          alt=""
-          height={150}
-          width={150}
-          className="w-16"
-        />
+      <div className="absolute inset-0 flex gap-2 flex-col templateContainer items-start lg:items-center  justify-end lg:justify-end pb-20">
+        <div data-aos="fade-down">
+          <Image
+            src={"/logos/alain2.png"}
+            alt=""
+            height={200}
+            width={200}
+            className="w-16 md:w-20 lg:w-16"
+          />
+        </div>
         <BlurText
           text="The biggest ladies Only"
-          className="text-templatePrimary leading-tight lg:leading-tight lg:text-center text-4xl lg:text-5xl uppercase font-bold"
+          className="text-templatePrimary leading-tight lg:leading-tight lg:text-center text-4xl md:text-[45px] lg:text-5xl uppercase font-bold"
           delay={50}
         />
         <BlurText
           text="Gym in Al Ain"
-          className="text-templateWhite leading-tight lg:leading-tight lg:text-center text-4xl lg:text-5xl uppercase font-bold"
+          className="text-templateWhite leading-tight lg:leading-tight lg:text-center text-4xl md:text-[50px] lg:text-5xl uppercase font-bold"
           delay={50}
         />
       </div>

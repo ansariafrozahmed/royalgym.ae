@@ -16,7 +16,7 @@
 }
 
 .paraDesign {
-  text-align: center;
+  text-align: left;
   font-size: 15px;
   word-spacing: 1;
   line-height: 1.6;
@@ -25,7 +25,7 @@
 
 @media (max-width: 600px) {
   .paraDesign {
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     word-spacing: 1;
     line-height: 1.6;

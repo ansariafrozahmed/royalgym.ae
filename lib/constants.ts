@@ -53,33 +53,163 @@ export const faqData = [
 
 export const ourClasses = [
   {
-    courseName: "Power Sculpt",
+    courseName: "Strength",
+    image:
+      "https://img.freepik.com/free-photo/girl-athlete-keeps-disc-from-bar-weighting-agent-doing-crossfit-fitness-concept-sports-equipment-weight-loss_639032-1603.jpg?t=st=1735554402~exp=1735558002~hmac=21d5899a70cb2cddb136a5ad43e64884d70249d5c8feb5335bc960e039cd001d&w=740",
   },
   {
-    courseName: "Yoga Bliss",
-  },
-  {
-    courseName: "Dance Cardio",
+    courseName: "Mobility",
+    image:
+      "https://img.freepik.com/free-photo/young-adult-doing-indoor-sport-gym_23-2149205612.jpg?t=st=1735554521~exp=1735558121~hmac=fcb758dedad3c2a224c3f3d6126d579b66ee6297406ea9d84de3ce366964af87&w=740",
   },
   {
     courseName: "Pilates Core",
+    image:
+      "https://img.freepik.com/free-photo/great-exercise-have-flat-abs-young-caucasian-woman-holding-deadbug-press-pose-exercise-muscles-abdomen_662251-1451.jpg?t=st=1735554633~exp=1735558233~hmac=211aeeae845f9e60d5fd6104fa24407ccbfdc0be04390830e5d961dbf408c110&w=740",
   },
   {
-    courseName: "Barre Balance",
+    courseName: "Cardio",
+    image:
+      "https://img.freepik.com/free-photo/young-woman-doing-exercise-gym_7502-8983.jpg?t=st=1735554488~exp=1735558088~hmac=54cb95ebf2b1d88b553780b8968a4ba5452ea560485af2f12606609256def428&w=740",
+  },
+];
+
+export const ourTrainers = [
+  {
+    id: 1,
+    name: "Aisha Al-Fahim",
+    flag: "https://cdn-icons-png.flaticon.com/128/14010/14010034.png",
+    nationality: "Egyptian",
+    certification: [
+      "Flow Motion",
+      "Certified Swimming Instructor LEVEL 1,2,3,4 (ASCA)",
+      "Certified in Training for Swimming Championships",
+      "Certified Lifeguard",
+      "Bachelor’s Degree in Child Psychology",
+      "Clinical Nutrition Diploma",
+    ],
+    text: "High field Level 2 International Award in Emergency First Aid, Defibrillation and CPR.",
+    image:
+      "https://img.freepik.com/free-photo/woman-listening-music-drinking-water-gym_1303-31854.jpg?t=st=1735724946~exp=1735728546~hmac=4eb799fa472c5b327c1b73dfa00d47fb433bc0d6e4a6c00cb339bbe2065256c9&w=740",
   },
   {
-    courseName: "Fit & Flex",
+    id: 2,
+    name: "Hanan Al-Mansouri",
+    flag: "https://cdn-icons-png.flaticon.com/128/14010/14010034.png",
+    nationality: "Egyptian",
+    certification: [
+      "Advanced Strength and Conditioning Certification",
+      "Certified Personal Trainer (ACE)",
+      "Certified Nutrition Specialist",
+      "Certified Lifeguard",
+      "Bachelor’s Degree in Sports Science",
+    ],
+    text: "Expert in strength training and rehabilitation techniques.",
+    image:
+      "https://img.freepik.com/free-photo/woman-with-water-gym_1303-5531.jpg?t=st=1735724877~exp=1735728477~hmac=529988f1aac332627f2b65663a707563d669bb639ffc17e17aa3f34390ef9b03&w=740",
   },
   {
-    courseName: "Zumba Energy",
+    id: 3,
+    name: "Maha Al-Rashidi",
+    flag: "https://cdn-icons-png.flaticon.com/128/14010/14010034.png",
+    nationality: "Lebanese",
+    certification: [
+      "Yoga Instructor Certification (RYT 500)",
+      "Pilates Instructor Certification",
+      "Certified Holistic Nutritionist",
+      "Mindfulness Meditation Trainer",
+    ],
+    text: "Specialist in mental wellness and body alignment techniques.",
+    image:
+      "https://img.freepik.com/premium-photo/beautiful-woman-training-with-weights-gym_236854-11385.jpg?w=740",
   },
   {
-    courseName: "HIIT for Her",
+    id: 4,
+    name: "Laila Al-Zaabi",
+    flag: "https://cdn-icons-png.flaticon.com/128/14010/14010034.png",
+    nationality: "Jordanian",
+    certification: [
+      "Certified Strength and Conditioning Specialist (CSCS)",
+      "Certified Swimming Instructor (ASCA)",
+      "Bachelor’s Degree in Kinesiology",
+      "Sports Psychology Certification",
+    ],
+    text: "Focused on athletic performance enhancement and injury prevention.",
+    image:
+      "https://img.freepik.com/free-photo/smiling-beautiful-brunette-female-boxer-sportswear-holds-protective-helmet-looking-camera-isolated-dark-textured-background_613910-19927.jpg?t=st=1735724966~exp=1735728566~hmac=fe1eb3450875fdea4a487d3269d5db61d8fb2f8090b12400cbc3db58b00d1efe&w=740",
   },
   {
-    courseName: "Booty Burn",
+    id: 5,
+    name: "Fatima Al-Dhaheri",
+    flag: "https://cdn-icons-png.flaticon.com/128/14010/14010034.png",
+    nationality: "Emirati",
+    certification: [
+      "Certified Zumba Instructor",
+      "Certified Personal Trainer (NASM)",
+      "Functional Training Specialist",
+      "Certified CPR and First Aid",
+      "Bachelor’s Degree in Health and Fitness",
+    ],
+    text: "Dedicated to creating dynamic fitness routines for all ages.",
+    image:
+      "https://img.freepik.com/premium-photo/young-sport-woman-making-weightlifting-isolated-black-background_1368-61321.jpg?w=740",
   },
   {
-    courseName: "Strength & Grace",
+    id: 6,
+    name: "Sara Al-Hammadi",
+    flag: "https://cdn-icons-png.flaticon.com/128/14010/14010034.png",
+    nationality: "Saudi",
+    certification: [
+      "Certified CrossFit Trainer",
+      "Olympic Weightlifting Certification",
+      "Certified Sports Nutritionist",
+      "CPR and AED Certified",
+    ],
+    text: "Expert in high-intensity interval training and powerlifting.",
+    image:
+      "https://img.freepik.com/free-photo/beautiful-sportive-girl-posing-with-crossed-arms-dark-wall_176420-617.jpg?t=st=1735725033~exp=1735728633~hmac=a6c57ff6717562c786c48832a9c14d81ef245c145fb75cf67adc222a6723e02d&w=740",
   },
+  {
+    id: 7,
+    name: "Noura Al-Nuaimi",
+    flag: "https://cdn-icons-png.flaticon.com/128/14010/14010034.png",
+    nationality: "Moroccan",
+    certification: [
+      "Certified Dance Instructor",
+      "Certified in Child Fitness Programs",
+      "Bachelor’s Degree in Physical Education",
+      "Advanced Aerobics Certification",
+    ],
+    text: "Passionate about promoting fitness through dance and movement.",
+    image:
+      "https://img.freepik.com/free-photo/young-attractive-female-boxer-with-long-hair-boxing-gloves-is-ready-fight_613910-15173.jpg?t=st=1735725052~exp=1735728652~hmac=c8bbf8ad7324062cac21d4db067cb96790f457ea215216ceccff5708d5808f45&w=740",
+  },
+  {
+    id: 8,
+    name: "Reem Al-Suwaidi",
+    flag: "https://cdn-icons-png.flaticon.com/128/14010/14010034.png",
+    nationality: "Tunisian",
+    certification: [
+      "Certified Martial Arts Instructor",
+      "Certified Personal Trainer (ISSA)",
+      "Certified Kettlebell Instructor",
+      "First Aid and Emergency Response Certified",
+    ],
+    text: "Specialized in functional training and self-defense techniques.",
+    image:
+      "https://img.freepik.com/premium-photo/young-sport-brunette-woman-isolated-white-wall-making-weightlifting_1368-83820.jpg?w=740",
+  },
+];
+
+export const goals = [
+  "Weight Loss and Management",
+  "Strength Training",
+  "Flexibility Improvement",
+  "Cardiovascular Health",
+  "Stress Reduction",
+  "Social Interaction",
+  "Skill Development (e.g., Swimming, Dance, or Self-Defense)",
+  "Improved Posture",
+  "Health Education and Awareness",
+  "Personalized Fitness Plans",
 ];

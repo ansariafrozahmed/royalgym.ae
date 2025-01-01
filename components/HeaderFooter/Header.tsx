@@ -12,14 +12,29 @@ const Header: React.FC<HeaderProps> = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    let lastScrollY = 0;
+
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down
+        setIsVisible(false);
+      } else {
+        // Scrolling up
+        setIsVisible(true);
+      }
+
+      if (currentScrollY > 100) {
         setHasScrolled(true);
       } else {
         setHasScrolled(false);
       }
+
+      lastScrollY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -36,8 +51,8 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <div
       className={`fixed z-50 w-full transition-all ease-in-out duration-300 ${
-        hasScrolled ? "bg-templatePrimary" : ""
-      }`}
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      } ${hasScrolled ? "bg-templatePrimary" : ""}`}
     >
       <div className="templateContainer py-3 flex flex-row-reverse lg:flex-row justify-between items-center">
         {/* Sidebar Menu */}
@@ -63,8 +78,8 @@ const Header: React.FC<HeaderProps> = () => {
                   pathname === item.url && "active-class"
                 }`}
               >
-                <Link onClick={() => setIsOpen(false)} href={item.url}>
-                  {item.label}
+                <Link href={item.url}>
+                  <span onClick={() => setIsOpen(false)}>{item.label}</span>
                 </Link>
               </li>
             ))}
@@ -110,7 +125,7 @@ const Header: React.FC<HeaderProps> = () => {
         </div>
 
         {/* BUTTONS */}
-        <div className="space-x-2 hidden md:flex w-1/3 items-center justify-end">
+        <div className="space-x-2 hidden lg:flex w-1/3 items-center justify-end">
           <button
             className={`border text-sm transition-all ease-in-out duration-200 text-templateWhite px-4 py-1.5
             ${

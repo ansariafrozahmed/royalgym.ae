@@ -14,9 +14,11 @@ const FAQsection = () => {
     <div className="">
       <div className="templateContainer py-10 lg:py-12 flex flex-col lg:flex-row gap-6 lg:gap-10">
         {/* Image Section */}
-        <div className="w-full lg:w-[40%] h-[200px] lg:h-[500px] lg:sticky top-20">
+        <div className="w-full lg:w-[40%] h-[200px] md:h-[380px] lg:h-[500px] lg:sticky top-20">
           <Image
-            src={"/images/FAQ.webp"}
+            src={
+              "https://img.freepik.com/free-photo/full-shot-fit-people-doing-burpees_23-2149445897.jpg?t=st=1735724274~exp=1735727874~hmac=90d931bcdea50477d48305233ed1fdeb7e836499e65856d1c7a83343a52f65cf&w=1500"
+            }
             className="h-full w-full object-cover"
             alt="FAQ Image"
             height={800}
@@ -46,7 +48,7 @@ const FAQsection = () => {
                 onClick={() => toggleAccordion(index)}
               >
                 <h3
-                  className={`text-sm lg:text-lg text-templatePrimary cursor-pointer flex items-center justify-between`}
+                  className={`text-sm lg:text-lg text-templateDark cursor-pointer flex items-center justify-between`}
                   aria-expanded={activeIndex === index}
                 >
                   {faq.question}
@@ -59,7 +61,7 @@ const FAQsection = () => {
                     activeIndex === index ? "max-h-screen" : "max-h-0"
                   }`}
                 >
-                  <p className="mt-2 text-xs lg:text-sm text-gray-600">
+                  <p className="mt-2 text-xs lg:text-sm text-templatePrimary">
                     {faq.answer}
                   </p>
                 </div>

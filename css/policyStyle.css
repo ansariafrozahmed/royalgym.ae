@@ -1,0 +1,40 @@
+.policyH2 {
+  font-size: 25px;
+  word-spacing: 1;
+  line-height: 1.6;
+  color: #242424;
+}
+.policyH3 {
+  font-size: 22px;
+  word-spacing: 1;
+  line-height: 1.6;
+  color: #242424;
+}
+.policyPara {
+  text-align: left;
+  font-size: 15px;
+  word-spacing: 1;
+  line-height: 1.6;
+  color: #242424;
+}
+
+@media (max-width: 600px) {
+  .policyPara {
+    font-size: 14px;
+    word-spacing: 1;
+    line-height: 1.6;
+    color: #242424;
+  }
+  .policyH2 {
+    font-size: 24px;
+    word-spacing: 1;
+    color: #242424;
+    line-height: 1.2;
+  }
+  .policyH3 {
+    font-size: 21px;
+    word-spacing: 1;
+    line-height: 1.6;
+    color: #242424;
+  }
+}
