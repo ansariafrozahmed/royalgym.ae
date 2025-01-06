@@ -1,14 +1,10 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ChevronRight } from "lucide-react";
-import { SplitText } from "../ReactSpring/SplitText";
 import { ourClasses } from "@/lib/constants";
 import ClassesCard from "../Cards/ClassesCard";
-import { BlurText } from "../ReactSpring/BlurText";
 
 const OurClasses: React.FC = () => {
   gsap.registerPlugin(ScrollTrigger);

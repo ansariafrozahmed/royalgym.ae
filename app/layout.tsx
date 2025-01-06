@@ -6,6 +6,16 @@ import FooterWrapper from "@/components/HeaderFooter/FooterWrapper";
 import SmoothScroll from "@/components/WrapperAndAll/SmoothScroll";
 import AosComp from "@/components/WrapperAndAll/Aos";
 
+// import localFont from "next/font/local";
+
+// const industry = localFont({
+//   src: "./fonts/industry.woff",
+// });
+
+// const industryBold = localFont({
+//   src: "./fonts/industryBold.woff",
+// });
+
 export const metadata: Metadata = {
   title: "Royal Gym AE",
   description: "The biggest ladies Only Gym in Al Ain",
@@ -41,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>
+      <body className={`antialiased `}>
         <SmoothScroll>
           <AosComp />
           <NextTopLoader showSpinner={false} color="#242424" />

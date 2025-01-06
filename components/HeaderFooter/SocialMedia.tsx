@@ -3,7 +3,7 @@ import React from "react";
 
 const SocialMedia = () => {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-2">
       <a href="https://www.facebook.com/share/1DsED1QBTC/" target="_blank">
         <Image
           src={"/icons/facebook.webp"}

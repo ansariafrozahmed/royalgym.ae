@@ -11,7 +11,7 @@ const ReformerPilates = () => {
           "https://www.datocms-assets.com/74077/1669251620-reformerpilates_hero.jpg?w=1600"
         }
         alt=""
-        className="h-[300px] md:h-[500px] lg:h-[480px] object-cover object-top"
+        className="h-[500px]  object-cover object-top"
         height={500}
         width={1600}
       />

@@ -35,8 +35,8 @@ const TrainersCard: React.FC<Props> = (props) => {
           "https://images.pexels.com/photos/13197535/pexels-photo-13197535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         }
         alt=""
-        height={600}
-        width={600}
+        height={1000}
+        width={1000}
         className="h-full w-full object-cover transition-opacity duration-500 ease-in-out"
       />
 
@@ -94,7 +94,7 @@ const TrainersCard: React.FC<Props> = (props) => {
           certification{" "}
           <ChevronDown
             className={`transition-transform duration-500 ease-in-out ${
-              isOpen ? "rotate-180" : ""
+              isOpen ? "" : "rotate-180"
             }`}
             size={15}
           />

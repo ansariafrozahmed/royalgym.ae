@@ -3,28 +3,8 @@ import React from "react";
 import SocialMedia from "../HeaderFooter/SocialMedia";
 import { BlurText } from "../ReactSpring/BlurText";
 
-const fetchBannerVideo = async () => {
-  try {
-    const response = await fetch(
-      `${process.env.BACKEND_URL}/wp-json/wp/v2/home-page-video?_fields=meta`
-    );
-    if (!response.ok) {
-      throw new Error("Failed to fetch category");
-    }
-    const data = await response.json();
-    if (data.length > 0) {
-      return data[0].meta.video;
-    } else {
-      return null;
-    }
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
-};
-
-const VideoBanner: React.FC = async () => {
-  const bannerData = await fetchBannerVideo();
+const VideoBanner = ({ bannerVideo }: { bannerVideo: string }) => {
+  // const bannerData = await fetchBannerVideo();
 
   return (
     <div className="relative h-[100svh] bg-black w-[100%]">
@@ -38,13 +18,13 @@ const VideoBanner: React.FC = async () => {
         muted
       >
         <source
-          src={bannerData ? bannerData : "/videos/newhomebanner.mp4"}
+          src={bannerVideo || "/videos/newhomebanner.mp4"}
           type="video/mp4"
         />
         Your browser does not support the video tag.
       </video>
       {/* OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent lg:from"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
       {/* H1 TEXT */}
       <div className="absolute inset-0 flex gap-2 flex-col templateContainer items-start lg:items-center  justify-end lg:justify-end pb-20">
         <div data-aos="fade-down">
@@ -58,17 +38,17 @@ const VideoBanner: React.FC = async () => {
         </div>
         <BlurText
           text="The biggest ladies Only"
-          className="text-templatePrimary leading-tight lg:leading-tight lg:text-center text-4xl md:text-[45px] lg:text-5xl uppercase font-bold"
+          className="text-templatePrimary leading-tight lg:leading-[1.1] lg:text-center text-4xl md:text-[45px] lg:text-5xl uppercase font-bold"
           delay={50}
         />
         <BlurText
           text="Gym in Al Ain"
-          className="text-templateWhite leading-tight lg:leading-tight lg:text-center text-4xl md:text-[50px] lg:text-5xl uppercase font-bold"
+          className="text-templateWhite leading-tight lg:leading-[1.1] lg:text-center text-4xl md:text-[50px] lg:text-5xl uppercase font-bold"
           delay={50}
         />
       </div>
       {/* SOCIAL MEDIA */}
-      <div className="absolute right-5  z-40 bottom-5">
+      <div className="absolute right-5  bottom-5">
         <SocialMedia />
       </div>
     </div>

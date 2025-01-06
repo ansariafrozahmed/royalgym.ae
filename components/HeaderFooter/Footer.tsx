@@ -116,7 +116,7 @@ const Footer = () => {
           <div className="space-y-2">
             {/* APP STORE BUTTON */}
             <a
-              href="https://play.google.com/store/apps/details?id=com.allup.royalgymuae"
+              href="https://apps.apple.com/ae/app/royal-gym/id6479743422"
               target="_blank"
               className="inline-block cursor-pointer"
             >
@@ -129,7 +129,7 @@ const Footer = () => {
               </div>
             </a>
             <a
-              href="https://apps.apple.com/ae/app/royal-gym/id6479743422"
+              href="https://play.google.com/store/apps/details?id=com.allup.royalgymuae"
               target="_blank"
               className="inline-block cursor-pointer"
             >

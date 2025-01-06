@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { CalendarDays, Goal, Mail, Phone, Pointer, User } from "lucide-react";
-import { SplitText } from "../ReactSpring/SplitText";
 import { goals } from "@/lib/constants";
 
 const InputField = ({ icon: Icon, ...props }: any) => (

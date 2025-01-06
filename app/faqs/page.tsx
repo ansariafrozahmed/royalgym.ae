@@ -1,5 +1,6 @@
 import Breadcrumb from "@/components/Banner/Breadcrumb";
 import FAQsection from "@/components/CTAcomp/FAQsection";
+import Heading from "@/components/StyleComps/Heading";
 import { Metadata } from "next";
 import React from "react";
 

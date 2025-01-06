@@ -34,17 +34,16 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <div>
+    <>
       <Breadcrumb title="Reach Out To Us" list={["Home", "Reach out to us"]} />
       <div
         style={{
           backgroundImage: 'url("/images/footer-bg.png")',
           backgroundSize: "cover",
-          // objectPosition: "center",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="flex items-center justify-center pb-5 md:pt-10 md:pb-5"
+        className="flex bg-white relative items-center justify-center pb-5 md:pt-10 md:pb-5"
       >
         <ReactOutForm text="Our membership consultant" />
       </div>
@@ -58,7 +57,7 @@ const Page = () => {
           width={250}
         />
       </div>
-    </div>
+    </>
   );
 };
 
