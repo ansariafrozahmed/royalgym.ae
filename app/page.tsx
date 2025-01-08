@@ -1,9 +1,11 @@
 import ReformerPilates from "@/components/Banner/ReformerPilates";
 import VideoBanner from "@/components/Banner/VideoBanner";
 import OurClasses from "@/components/Classes/OurClasses";
+import OurClassesMobile from "@/components/Classes/OurClassesMobile";
 import FAQsection from "@/components/CTAcomp/FAQsection";
 import JoinToday from "@/components/CTAcomp/JoinToday";
 import PersonalTraining from "@/components/CTAcomp/PersonalTraining";
+import AnimatedTextAndImageComp from "@/components/HomeComps/AnimatedTextAndImageComp";
 import DownloadOurApp from "@/components/StyleComps/DownloadOurApp";
 import ParallaxScrollSection from "@/components/StyleComps/ParallaxScrollSection";
 
@@ -37,15 +39,21 @@ export default async function Home() {
       <ParallaxScrollSection />
       <div className="parallax-section relative">
         <VideoBanner bannerVideo={data} />
-        <div className="absolute inset-0 bg-black transition-opacity duration-100 parallax-overlay"></div>
+        {/* <div className="absolute inset-0 bg-black transition-opacity duration-100 parallax-overlay"></div> */}
       </div>
-      <ReformerPilates />
-      <div key={1}>
+      {/* FOR DESKTOP */}
+      <div className="hidden lg:block bg-white" key={1}>
         <OurClasses />
       </div>
-      <PersonalTraining />
-      <DownloadOurApp />
-      <FAQsection />
+      {/* OUR CLASSES FOR MOBILE */}
+      <div className="lg:hidden relative bg-white">
+        <OurClassesMobile />
+      </div>
+      <AnimatedTextAndImageComp />
+      <ReformerPilates />
+      {/* <PersonalTraining /> */}
+      {/* <DownloadOurApp /> */}
+      {/* <FAQsection /> */}
       <JoinToday />
     </>
   );

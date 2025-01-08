@@ -54,23 +54,23 @@ export const faqData = [
 export const ourClasses = [
   {
     courseName: "Strength",
-    image:
-      "https://img.freepik.com/free-photo/girl-athlete-keeps-disc-from-bar-weighting-agent-doing-crossfit-fitness-concept-sports-equipment-weight-loss_639032-1603.jpg?t=st=1735554402~exp=1735558002~hmac=21d5899a70cb2cddb136a5ad43e64884d70249d5c8feb5335bc960e039cd001d&w=740",
+    image: "/classess/strength.jpg",
   },
   {
     courseName: "Mobility",
-    image:
-      "https://img.freepik.com/free-photo/young-adult-doing-indoor-sport-gym_23-2149205612.jpg?t=st=1735554521~exp=1735558121~hmac=fcb758dedad3c2a224c3f3d6126d579b66ee6297406ea9d84de3ce366964af87&w=740",
+    image: "/classess/mob.jpg",
   },
   {
     courseName: "Pilates Core",
-    image:
-      "https://img.freepik.com/free-photo/great-exercise-have-flat-abs-young-caucasian-woman-holding-deadbug-press-pose-exercise-muscles-abdomen_662251-1451.jpg?t=st=1735554633~exp=1735558233~hmac=211aeeae845f9e60d5fd6104fa24407ccbfdc0be04390830e5d961dbf408c110&w=740",
+    image: "/classess/core.jpg",
   },
   {
     courseName: "Cardio",
-    image:
-      "https://img.freepik.com/free-photo/young-woman-doing-exercise-gym_7502-8983.jpg?t=st=1735554488~exp=1735558088~hmac=54cb95ebf2b1d88b553780b8968a4ba5452ea560485af2f12606609256def428&w=740",
+    image: "/classess/cardio.jpg",
+  },
+  {
+    courseName: "Body Building",
+    image: "/classess/b.jpg",
   },
 ];
 

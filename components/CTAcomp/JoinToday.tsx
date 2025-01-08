@@ -3,7 +3,7 @@ import React from "react";
 
 const JoinToday = () => {
   return (
-    <div className="templateContainer space-y-3 lg:space-y-2 py-12">
+    <div className="templateContainer space-y-3 lg:space-y-2 py-16">
       <h2 className="text-center text-4xl lg:text-5xl font-semibold text-templatePrimary">
         JOIN TODAY
       </h2>

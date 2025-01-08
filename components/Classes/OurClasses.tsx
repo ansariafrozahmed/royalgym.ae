@@ -56,33 +56,32 @@ const OurClasses: React.FC = () => {
   }, []);
 
   return (
-    <div
-      ref={sectionRef}
-      className="templateContainer h-screen w-full flex flex-col lg:flex-row gap-8 items-center justify-center overflow-hidden"
-    >
-      {/* Section Title */}
-      <div
-        ref={headingRef}
-        className="w-full text-center lg:text-left lg:w-[20%] lg:my-auto space-x-4 lg:space-x-0 lg:space-y-1"
-      >
-        {/* <BlurText
+    <div ref={sectionRef} className="bg-white w-full">
+      <div className="templateContainer h-screen w-full flex flex-col lg:flex-row gap-8 items-center justify-center overflow-hidden">
+        {/* Section Title */}
+        <div
+          ref={headingRef}
+          className="w-full text-center lg:text-left lg:w-[20%] lg:my-auto space-x-4 lg:space-x-0 lg:space-y-1"
+        >
+          {/* <BlurText
           text="Our Classes"
           className="text-[35px] lg:text-[40px] uppercase text-templatePrimary tracking-wide leading-none font-semibold"
           delay={50}
         /> */}
-        <h2 className="text-[35px] lg:text-[40px] uppercase text-templatePrimary tracking-wide leading-none font-semibold">
-          Our Classes
-        </h2>
-      </div>
+          <h2 className="text-[35px] lg:text-[40px] uppercase text-templatePrimary tracking-wide leading-none font-semibold">
+            Our Classes
+          </h2>
+        </div>
 
-      {/* Card Section */}
-      <div
-        ref={cardSectionRef}
-        className="lg:w-[80%] flex gap-5 w-full relative"
-      >
-        {ourClasses.map((item, index) => (
-          <ClassesCard data={item} key={index} />
-        ))}
+        {/* Card Section */}
+        <div
+          ref={cardSectionRef}
+          className="lg:w-[80%] flex gap-5 w-full relative"
+        >
+          {ourClasses.map((item, index) => (
+            <ClassesCard data={item} key={index} />
+          ))}
+        </div>
       </div>
     </div>
   );

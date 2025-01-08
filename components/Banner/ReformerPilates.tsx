@@ -5,17 +5,17 @@ import { BlurText } from "../ReactSpring/BlurText";
 
 const ReformerPilates = () => {
   return (
-    <div className="relative">
+    <div className="relative mt-16">
       <Image
         src={
           "https://www.datocms-assets.com/74077/1669251620-reformerpilates_hero.jpg?w=1600"
         }
         alt=""
-        className="h-[500px]  object-cover object-top"
+        className="h-[450px] lg:h-[500px] w-full object-cover object-top"
         height={500}
         width={1600}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
       <div className="inset-0 absolute flex flex-col items-center justify-end text-templateWhite pb-6 lg:pb-10">
         <div className="space-x-3 lg:space-x-5 text-center">
           <SplitText

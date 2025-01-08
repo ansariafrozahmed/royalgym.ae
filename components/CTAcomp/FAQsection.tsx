@@ -12,7 +12,7 @@ const FAQsection = () => {
 
   return (
     <div className="">
-      <div className="templateContainer py-10 lg:py-12 flex flex-col lg:flex-row gap-6 lg:gap-10">
+      <div className="templateContainer  flex flex-col lg:flex-row gap-6 lg:gap-10">
         {/* Image Section */}
         <div className="w-full lg:w-[40%] h-[200px] md:h-[380px] lg:h-[500px] lg:sticky top-20">
           <Image

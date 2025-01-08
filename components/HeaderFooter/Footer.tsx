@@ -14,7 +14,7 @@ const Footer = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
-      className="bg-templateWhite"
+      className="bg-templateWhite relative"
     >
       <div className="w-full h-[1px] bg-gray-200"></div>
       <div className="templateContainer py-6 md:py-8 lg:py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-5">

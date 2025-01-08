@@ -11,7 +11,7 @@ interface Props {
 
 const ClassesCard: React.FC<Props> = ({ data }) => {
   return (
-    <div className="min-h-[420px] lg:min-h-[430px] group aspect-[4/5] rounded-xl overflow-hidden min-w-[300px] lg:min-w-[330px] relative">
+    <div className="min-h-[420px] rounded lg:min-h-[450px] group aspect-[4/5] overflow-hidden min-w-[300px] lg:min-w-[310px] relative">
       {/* Image */}
       {/* <div className="h-full w-full overflow-hidden rounded-full"> */}
       <Image
